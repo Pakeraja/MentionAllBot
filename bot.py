@@ -21,7 +21,7 @@ spam_chats = []
 @client.on(events.NewMessage(pattern="^/start$"))
 async def start(event):
   await event.reply(
-    "__**I'm Bhanumathi MentionAll Bot**, I can mention almost all members in group or channel 😒\nClick **/help** for more information__\n\n𝙾𝚆𝙽𝙴𝚁: [𝙸𝙰𝙼 𝙶𝚁𝙾𝙾𝚃](https://t.me/mynameisgroot)",
+    "__**I'm Bhanumathi MentionAll Bot💃**, I can mention almost all members in group or channel 😒\nClick **/help** for more information__\n\n𝙾𝚆𝙽𝙴𝚁: [𝙸𝙰𝙼 𝙶𝚁𝙾𝙾𝚃](https://t.me/mynameisgroot)",
     link_preview=False,
     buttons=(
       [
@@ -33,7 +33,7 @@ async def start(event):
 
 @client.on(events.NewMessage(pattern="^/help$"))
 async def help(event):
-  helptext = "**Help Menu of Bhanumathi MentionAllBot**\n\nCommand: @all\n__You can use this command with text what you want to mention others.__\n`Example: @all Good Morning!`\n__You can you this command as a reply to any message. Bot will tag users to that replied messsage__.\n\n𝙾𝚆𝙽𝙴𝚁: [𝙸𝚊𝚖 𝙶𝚛𝚘𝚘𝚝](https://t.me/mynameisgroot)"
+  helptext = "**Help Menu of Bhanumathi MentionAllBot💃**\n\nCommand: @all\n__You can use this command with text what you want to mention others.__\n`Example: @all Good Morning!`\n__You can you this command as a reply to any message. Bot will tag users to that replied messsage__.\n\n𝙾𝚆𝙽𝙴𝚁: [𝙸𝚊𝚖 𝙶𝚛𝚘𝚘𝚝](https://t.me/mynameisgroot)"
   await event.reply(
     helptext,
     link_preview=False,
