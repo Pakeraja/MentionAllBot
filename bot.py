@@ -21,31 +21,31 @@ spam_chats = []
 @client.on(events.NewMessage(pattern="^/start$"))
 async def start(event):
   await event.reply(
-    "__**I'm MentionAll Bot**, I can mention almost all members in group or channel 👻\nClick **/help** for more information__\n\n Follow [@AnjanaMadu](https://github.com/AnjanaMadu) on Github",
+    "__**I'm MentionAll Bot**, I can mention almost all members in group or channel 👻\nClick **/help** for more information__\n\n **𝙾𝚆𝙽𝙴𝚁 [𝙸𝙰𝙼 𝙶𝚁𝙾𝙾𝚃](https://t.me/mynameisgroot)",
     link_preview=False,
     buttons=(
       [
-        Button.url('📣 Channel', 'https://t.me/harp_tech'),
-        Button.url('📦 Source', 'https://github.com/AnjanaMadu/MentionAllBot')
+        Button.url('😊𝚂𝚝𝚒𝚌𝚔𝚎𝚛 𝙿𝚊𝚌𝚔𝚜', 'https://t.me/Groot_network'),
+        Button.url('😒𝙵𝚞𝚗𝚗𝚢 𝙶𝚒𝚏𝚜', 'https://t.me/rjbr0')
       ]
     )
   )
 
 @client.on(events.NewMessage(pattern="^/help$"))
 async def help(event):
-  helptext = "**Help Menu of MentionAllBot**\n\nCommand: /mentionall\n__You can use this command with text what you want to mention others.__\n`Example: /mentionall Good Morning!`\n__You can you this command as a reply to any message. Bot will tag users to that replied messsage__.\n\nFollow [@AnjanaMadu](https://github.com/AnjanaMadu) on Github"
+  helptext = "**Help Menu of MentionAllBot**\n\nCommand: /mentionall\n__You can use this command with text what you want to mention others.__\n`Example: /mentionall Good Morning!`\n__You can you this command as a reply to any message. Bot will tag users to that replied messsage__.\n\n**𝙾𝚆𝙽𝙴𝚁 [𝙸𝚊𝚖 𝙶𝚛𝚘𝚘𝚝](https://t.me/mynameisgroot)"
   await event.reply(
     helptext,
     link_preview=False,
     buttons=(
       [
-        Button.url('📣 Channel', 'https://t.me/harp_tech'),
-        Button.url('📦 Source', 'https://github.com/AnjanaMadu/MentionAllBot')
+        Button.url('😊𝚂𝚝𝚒𝚌𝚔𝚎𝚛 𝙿𝚊𝚌𝚔𝚜', 'https://t.me/Groot_Network'),
+        Button.url('😒𝙵𝚞𝚗𝚗𝚢 𝙶𝚒𝚏𝚜', 'https://t.me/rjbr0')
       ]
     )
   )
   
-@client.on(events.NewMessage(pattern="^/mentionall ?(.*)"))
+@client.on(events.NewMessage(pattern="^@all ?(.*)"))
 async def mentionall(event):
   chat_id = event.chat_id
   if event.is_private:
